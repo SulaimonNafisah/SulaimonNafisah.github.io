@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DuckDuckGo</title>
+        <link rel="stylesheet" href="C:\Users\DELL\Desktop\New folder (2)\style.css">
+        
+    </head>
+    <body>
+       
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()"> 
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class="links" id="menuLinks">
+            <div class="down"> DUCKDUCKGO SEARCH </div>
+              <li><a href="#">Private Search</a></li>
+              <li><a href="#">Themes</a></li>
+              <li><a href="#">All Settings</a></li>
+              <li><a href="#">!Bang Search Shortcuts</a></li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+            <div class="close-btn" onclick="toggleMenu()" align="right"> X </div>
+            <div class="down"> DOWNLOAD </div>
+            <ul class="links" id="menuLinks"> 
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Windows</a></li>
+                <li><a href="#">Browser Extension</a></li>
+              </ul>
+              <div class="down"> DOWNLOAD </div>
+              <ul class="links" id="menuLinks"> 
+                  <li><a href="#">iOS</a></li>
+                  <li><a href="#">Android</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Windows</a></li>
+                  <li><a href="#">Browser Extension</a></li>
+                </ul>
+          </div>
+        </nav>
+          <script>
+            function toggleMenu() {
+          var menu = document.querySelector(".menu");
+          menu.classList.toggle("open");
+        }
+        </script>
+
+        <img src="C:\Users\DELL\Desktop\New folder (2)\download.svg"width="200" height="160" class="center">
+
+        <div class="container">
+            <form action="" class="searchbar">
+                <input type="text" placeholder="Search the web without being tracked">
+                <button type="submit"><img src= "download 2.png" alt="search"> </button>
+            </form>
+        </div>
+        </div>
+        <script>
+            // Get the search input element
+        const searchbar = document.getElementById('searchBar');
+
+// Add an event listener to the input field for the "focus" event
+        searchBar.addEventListener('focus', function() {
+  // When the input is focused, set the placeholder text to an empty string
+        searchbar.placeholder = '';
+});
+
+// Add an event listener to the input field for the "blur" event
+        searchBar.addEventListener('blur', function() {
+  // When the input loses focus (blurs), set the placeholder text back to "Search..."
+        searchbar.placeholder = 'Search...';
+});
+
+        </script>
+    <h1 class="head">Tired of being tracked online? We can help.</h1>
+    <h4 class="normal"> Get seamless privacy protection for free by switching to DuckDuckGo</h4>
+    <div  class="normal">
+        <span class="icon">&#10003;</span> <!-- Check icon using HTML entity -->
+        <p class="paragraph">Private Search</p>
+        <span class="icon">&#10003;</span> <!-- Check icon using HTML entity -->
+        <p class="paragraph">Tracker Blocking</p>
+        <span class="icon">✓</span> <!-- Check icon using the checkmark character -->
+        <p class="paragraph">Site Encryption</p>
+      </div>
+      <div class="center-container button-container">
+     
+        <a href="www.google.com" class="download-button"> 
+          <span class="windows-logo"></span> 
+          <img src="C:\Users\DELL\Desktop\New folder (2)\download.png" width="30px" height="30px"> 
+          Download DuckDuckGo for Windows 
+        </a> <br>
+        <a href="www.google.com" class="download-button second-button"> 
+          <span class="windows-logo"></span> 
+          <img src="C:\Users\DELL\Desktop\New folder (2)\download (1).png" width="40px" height="30px"> 
+          Add DuckDuckGo to Chrome
+      
+        </a>
+      </div>
+      <p class="text">Trusted by tens of millions worldwide!</p><br/>
+      <p class="text space"><b>Explore our features</b></p>
+
+
+      <div class="content-container">
+        <div class="content">
+          <h2>One Super<span></span>charged app, multiple types of privacy protection.</h2>
+        </div>
+        <div class="down-icon">
+          ▼ <!-- You can use ▽ for an upward arrow -->
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const downIconContainer = document.querySelector(".down-icon");
+    
+          downIconContainer.addEventListener("click", function () {
+            const contentContainer = this.closest(".content-container");
+            const containerHeight = contentContainer.clientHeight;
+            window.scrollBy(0, containerHeight);
+          });
+        });
+      </script>
+      
+      
+    </body>
+</html>
+

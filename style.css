@@ -1,0 +1,344 @@
+body{
+    background-color: rgb(14, 13, 13);
+    place-items: center;
+    padding: 70px;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initial position, off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    transition: right 0.3s ease;
+    z-index: 9999; /* Ensure it appears above other content */
+  }
+  
+  .menu.open {
+    right: 0; /* Show the menu on the screen */
+  }
+  
+  .menu-icon, .close-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .menu-icon {
+    right: 250px; /* Adjust the position to align with the menu */
+  }
+  
+  .line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 20px;
+    font-size: 0.8em;
+  }
+  
+  .links li {
+    padding: 5px 0;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .links a:hover {
+    color: #ffcc00; /* Change link color on hover */
+  }
+  
+  .close-btn{
+      font-size: 1em;
+      
+
+  }
+.down{
+    color: white;
+    font-size: 0.8em;
+    padding-bottom: 0px;
+    margin: 50px 20px;
+      
+  }
+
+  .spacer {
+  height: 100px; /* Add desired space before the next element */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.container{
+    width: 100%;
+    min-height: 20vh;
+
+    padding: 5%
+    background-color: white;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.searchbar{
+    width: 100%;
+    max-width:700px;
+    display: flex;
+    background: rgb(36, 35, 35);
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    backdrop-filter: blur(28px) saturate(180px);
+    box-shadow: 5px 5px 25px 3px rgb(0, 0, 0);
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: none;
+
+
+}
+
+.searchbar input{
+    display: flex;
+    background: none;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 1em;
+    caret-color: cyan;
+}
+::placeholder{
+    color: rgb(134, 134, 134);
+    font-size: 1em;
+    font: inherit;
+    padding: 1px 2px;
+    
+}
+
+.searchbar button img{
+    width: 25px;
+
+}
+
+.searchbar button {
+    background: none;
+    border-radius: 50px;
+    border: 0px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.head{
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    font: sans-serif;
+    margin:0;
+   
+}
+.normal{
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    font: sans-serif;
+    margin-top: 5px;
+}
+
+
+  
+.paragraph {
+    display: inline-block; /* To have texts and icons in a horizontal line */
+    margin-right: 10px; /* Adjust the spacing between texts and icons */
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+  }
+  
+.icon {
+    font-size: 10px; /* Set the size of the icon */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Adjust the size of the circular background */
+    height: 20px; /* Same as width to make it a circle */
+    border-radius: 50%; /* Make the background round */
+    background-color: rgb(83, 132, 240); /* Set the background color to blue */
+    color: rgb(0, 0, 0); /* Set the text color to white */
+    margin-right: 5px;
+    line-height: 6px;
+
+  }
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5vh;
+    margin: 25px 10px;
+    padding: 30px 10px;
+  }
+
+  .button-container {
+    text-align: center; /* Center the buttons horizontally */
+    display: flex; /* By default, display buttons side by side */
+  }
+  .download-button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 15px;
+   
+    background-color: rgb(83, 132, 240);
+    color: black;
+    border: none;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+  .windows-logo {
+    display: inline-block;
+    width: 5px; /* Adjust the size of the logo as needed */
+    height: 5px;
+    
+  }
+
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column; /* Arrange buttons vertically */
+    }
+
+    .download-button {
+      width: 100%; /* Make buttons take up full width of the container */
+      margin-right: 0; /* Remove horizontal margin between buttons */
+    }
+  }
+
+.text{
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.down-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  width: 50px; /* Adjust the size of the circular background */
+  height: 50px; /* Same as width to make it a circle */
+  border-radius: 50%; /* Make the background round */
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+  box-shadow: 0 0 0 1px white;
+  z-index: 999;
+
+}
+
+@media (max-width: 768px) {
+  .down-icon {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    font-size: 20;
+  }
+}
+
+h2{
+  color: white;
+  font:30px;
+  font-weight: bold;
+}
+/*Craving salad? We have a drink to go! Craving Pastries? We got drinks to go! Leaning on the healthier side? We got a drink for you. KK, it's amazingly good*/
